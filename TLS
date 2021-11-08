@@ -1,0 +1,346 @@
+Key Store: xxxx
+Key Store type: PKCS12
+Key Store provider: JsafeJCE
+Initializing key managers
+*** Found key for alias:xxx
+1. [
+  Version: V3
+  Serial Number: 169339689569922942653398637421509902058
+  SignatureAlgorithm: SHA384withECDSA (1.2.840.10045.4.3.3)
+  Issuer Name: L=xx, ST=xx, CN=xx-EC.xx.xx, OU=xx, O="xx.", C=US
+  Validity From: Wed Jan 18 00:25:18 EST 2017
+           To:   Mon Jan 17 00:25:17 EST 2022
+  Subject Name: L=xx, ST=xx, CN=xx-EC.xx.xx, OU=xx, O="xx.", C=US
+  Key: EC (1.2.840.10045.2.1)
+    Parameters present
+    Key value: 046718017222402f8853515c757ea889ddfc82718435db5843910ebe635b31dc8e54e7a9e1f42ca657a39712963791a3f9bac4cdecdc87c111f33b27989d2fb7c235797577ac11da9527b0ffbb4db2a6578f997cdbfc399a870a6e68a064953fbe
+  Extensions: 5 present
+  [ 
+     Extension: KeyUsage (OID.2.5.29.15)
+     Critical: false
+     Usages: digitalSignature, keyEncipherment, dataEncipherment, keyCertSign, 
+  ]
+  [ 
+     Extension: ExtKeyUsageSyntax (OID.2.5.29.37)
+     Critical: false
+     Usage oids: 1.3.6.1.5.5.7.3.1, 1.3.6.1.5.5.7.3.2, 
+  ]
+  [ 
+     Extension: SubjectKeyIdentifier (OID.2.5.29.14)
+     Critical: false
+     keyID: 60f7d52203a6c074f215a84e4be456e25491dd04
+  ]
+  [ 
+     Extension: BasicConstraints (OID.2.5.29.19)
+     Critical: true
+     cA: true
+     pathLenConstraint: 0
+  ]
+  [ 
+     Extension: SubjectAltName (OID.2.5.29.17)
+     Critical: false
+        altNames: 1 names
+          1) xxx.xxx.com (dNSName)
+  ]
+
+  Signature: 
+  0000: 30 65 02 30 24 63 14 28 97 41 09 2b a4 c4 5c 33 [0e.0$c.(.A.+..\3]
+  0010: 4f b6 41 31 b6 31 99 f1 c7 81 58 18 42 22 0d ee [O.A1.1....X.B"..]
+  0020: e9 b3 d4 71 37 57 22 20 00 60 f7 58 f5 9f c7 b4 [...q7W" .`.X....]
+  0030: 05 37 44 9c 02 31 00 9f 14 a3 f7 73 24 58 e0 9d [.7D..1.....s$X..]
+  0040: 90 b5 4a 6c 9d 47 eb 4a 35 72 d5 e9 1e b9 6a ff [..Jl.G.J5r....j.]
+  0050: cf af 5c e3 ba c6 70 bb 99 66 51 aa 8d 77 45 94 [..\...p..fQ..wE.]
+  0060: e1 d8 77 b4 d6 20 6c                            [..w.. l         ]
+
+]
+Trust store: xxxx
+Trust store type: PKCS12
+Trust store provider: 
+Initializing trust managers
+Adding trusted certificate:
+.....
+...
+..
+Initializing default SecureRandom from Crypto layer
+Finished seeding default SecureRandom
+SecureRandom algorithm: DefaultRandom
+*** Session created: 
+[Session ID [
+], SSL_NULL_WITH_NULL_NULL]
+***DECRYPT: Ciphertext (149): [ 
+  0000: 01 00 00 91 03 03 c3 c5 76 e9 63 85 ba 85 6c 57 [........v.c...lW]
+.....
+...
+                               [.....           ]
+ ]
+***DECRYPT: Plaintext (149): [ 
+  0000: 01 00 00 91 03 03 c3 c5 76 e9 63 85 ba 85 6c 57 [........v.c...lW]
+........                                [.....           ]
+ ]
+Record received (149): [ 
+  0000: 01 00 00 91 03 03 c3 c5 76 e9 63 85 ba 85 6c 57 [........v.c...lW]
+ ..............
+ ]
+***READ ClientHello
+ProtocolVersion: TLSv1.2
+Client Random: [ 
+  0000: c3 c5 76 e9 63 85 ba 85 6c 57 e4 8d b0 c7 13 80 [..v.c...lW......]
+  0010: 92 0a 2e 8f ad 21 7b d1 67 e8 c3 62 75 c0 88 95 [.....!{.g..bu...]
+ ]
+Session ID: [ Empty ]
+Cipher Suites:
+1. TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+2. TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+3. TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+Received TLS_RENEGO_PROTECTION_REQUEST SCSV from client
+*** Session created: 
+[Session ID [
+  0000: 61 37 ad 36 d9 20 1d 12 09 eb db e1 51 8d ec df [a7.6. ......Q...]
+.............
+], TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384]
+Record sent (87): [ 
+  0000: 02 00 00 53 03 03 61 37 ad 36 d9 20 1d 12 09 eb [...S..a7.6. ....]
+......                           [.......         ]
+ ]
+***WRITE ServerHello
+ProtocolVersion: TLSv1.2
+Server Random: [ 
+  0000: 61 37 ad 36 d9 20 1d 12 09 eb db e1 51 8d ec df [a7.6. ......Q...]
+..... ]
+Session ID: [ 
+  0000: 61 37 ad 36 d9 20 1d 12 09 eb db e1 51 8d ec df [a7.6. ......Q...]
+.... ]
+Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+Extensions: [ 
+  0000: 00 0b 00 02 01 00 ff 01 00 01 00                [...........     ]
+ ]
+Record sent (714): [ 
+  0000: 0b 00 02 c6 00 02 c3 00 02 c0 30 82 02 bc 30 82 [..........0...0.]
+  ......
+  .....
+  .....
+  ..
+  
+ ]
+***WRITE Certificate chain: 
+1. [
+  Version: V3
+  Serial Number: 169339689569922942653398637421509902058
+  SignatureAlgorithm: SHA384withECDSA (1.2.840.10045.4.3.3)
+  Issuer Name: L=xxx, ST=MA, CN=xxx-EC.xxx.com, OU=xxx, O="xxx, Inc.", C=US
+  Validity From: Wed Jan 18 00:25:18 EST 2017
+           To:   Mon Jan 17 00:25:17 EST 2022
+  Subject Name: L=xxx, ST=MA, CN=xxx-EC.xxx.com, OU=xxx, O="xxx, Inc.", C=US
+  Key: EC (1.2.840.10045.2.1)
+    Parameters present
+    Key value: 046718017222402f8853515c757ea889ddfc82718435db5843910ebe635b31dc8e54e7a9e1f42ca657a39712963791a3f9bac4cdecdc87c111f33b27989d2fb7c235797577ac11da9527b0ffbb4db2a6578f997cdbfc399a870a6e68a064953fbe
+  Extensions: 5 present
+  [ 
+     Extension: KeyUsage (OID.2.5.29.15)
+     Critical: false
+     Usages: digitalSignature, keyEncipherment, dataEncipherment, keyCertSign, 
+  ]
+  [ 
+     Extension: ExtKeyUsageSyntax (OID.2.5.29.37)
+     Critical: false
+     Usage oids: 1.3.6.1.5.5.7.3.1, 1.3.6.1.5.5.7.3.2, 
+  ]
+  [ 
+     Extension: SubjectKeyIdentifier (OID.2.5.29.14)
+     Critical: false
+     keyID: 60f7d52203a6c074f215a84e4be456e25491dd04
+  ]
+  [ 
+     Extension: BasicConstraints (OID.2.5.29.19)
+     Critical: true
+     cA: true
+     pathLenConstraint: 0
+  ]
+  [ 
+     Extension: SubjectAltName (OID.2.5.29.17)
+     Critical: false
+        altNames: 1 names
+          1) xxx.xxx.com (dNSName)
+  ]
+
+  Signature: 
+  0000: 30 65 02 30 24 63 14 28 97 41 09 2b a4 c4 5c 33 [0e.0$c.(.A.+..\3]
+.....
+.....
+.....
+
+]
+Named Curve = P-384
+Record sent (212): [ 
+  0000: 0c 00 00 d0 03 00 18 61 04 f9 c6 a8 3b 49 39 65 [.......a....;I9e]
+............                                     [....            ]
+ ]
+***WRITE ServerKeyExchange ECDH
+SignatureHashAlgorithm: SHA384withECDSA
+ECDH NamedCurve : P-384
+ECDH PublicPoint: [ 
+  0000: 04 f9 c6 a8 3b 49 39 65 8e b5 39 ac a8 60 ab 2b [....;I9e..9..`.+]
+.......                                            [.               ]
+ ]
+***ENCRYPT: Plaintext (16384): [ 
+  0000: 02 00 00 53 03 03 61 37 ad 36 d9 20 1d 12 09 eb [...S..a7.6. ....]
+  ...........
+ ]
+***WRITE CertificateRequest
+Certificate Types: 
+1. ECDSA
+2. RSA
+3. DSA
+4. ECDH_ECDSA
+5. ECDH_RSA
+6. DiffieHellman_RSA
+7. DiffieHellman_DSA
+Certificate Authorties: 
+1. CN=xxx Premium, O=xxx, C=US
+....
+.....
+..
+
+Supported signature and hash algorithms: 
+1. SHA512withECDSA
+2. SHA384withECDSA
+3. SHA256withECDSA
+4. SHA224withECDSA
+5. SHA512withRSA
+6. SHA384withRSA
+7. SHA256withRSA
+8. SHA224withRSA
+9. SHA1withECDSA
+10. SHA1withRSA
+11. SHA1withDSA
+12. MD5withRSA
+Record sent (4): [ 
+  0000: 0e 00 00 00                                     [....            ]
+ ]
+***WRITE ServerHelloDone
+***ENCRYPT: Plaintext (3796): [ 
+  0000: 30 0c 06 03 55 04 0a 13 05 43 69 73 63 6f 31 19 [0...U....ccc.]
+ ........
+ ]
+***ENCRYPT: Ciphertext (3796): [ 
+  0000: 30 0c 06 03 55 04 0a 13 05 43 69 73 63 6f 31 19 [0...U....cccc.]
+  .....
+ ]
+***DECRYPT: Ciphertext (483): [ 
+  0000: 0b 00 01 df 00 01 dc 00 01 d9 30 82 01 d5 30 82 [..........0...0.]
+  ......
+ ]
+***DECRYPT: Plaintext (483): [ 
+  0000: 0b 00 01 df 00 01 dc 00 01 d9 30 82 01 d5 30 82 [..........0...0.]
+  .........
+ ]
+Record received (483): [ 
+  0000: 0b 00 01 df 00 01 dc 00 01 d9 30 82 01 d5 30 82 [..........0...0.]
+  ...............
+ ]
+***READ Certificate chain: 
+1. [
+  Version: V3
+  Serial Number: 321087773072410897811675141667362489231980828167
+  SignatureAlgorithm: SHA256withECDSA (1.2.840.10045.4.3.2)
+  Issuer Name: CN=server1.xxx.com
+  Validity From: Thu Jun 24 06:03:14 EDT 2021
+           To:   Wed Jun 19 06:03:14 EDT 2041
+  Subject Name: CN=server1.xxx.com
+  Key: EC (1.2.840.10045.2.1)
+    Parameters present
+    Key value: xxxxx
+  Extensions: 3 present
+  [ 
+     Extension: SubjectKeyIdentifier (OID.2.5.29.14)
+     Critical: false
+     keyID: 9f88edac98e246f478d7c33ad41b3837bce21e68
+  ]
+  [ 
+     Extension: AuthorityKeyIdentifier (OID.2.5.29.35)
+     Critical: false
+     keyID: 9f88edac98e246f478d7c33ad41b3837bce21e68
+  ]
+  [ 
+     Extension: BasicConstraints (OID.2.5.29.19)
+     Critical: true
+     cA: true
+  ]
+
+  Signature: 
+  0000: 30 66 02 31 00 ff 0e 40 ba 82 6d ab db 9c 98 3f [0f.1...@..m....?]
+..................
+
+]
+Found trusted certificate: [
+  Version: V3
+  Serial Number: 321087773072410897811675141667362489231980828167
+  SignatureAlgorithm: SHA256withECDSA (1.2.840.10045.4.3.2)
+  Issuer Name: CN=server1.xxx.com
+  Validity From: Thu Jun 24 06:03:14 EDT 2021
+           To:   Wed Jun 19 06:03:14 EDT 2041
+  Subject Name: CN=server1.xxx.com
+  Key: EC (1.2.840.10045.2.1)
+    Parameters present
+    Key value: xxxxxxx
+  Extensions: 3 present
+  [ 
+     Extension: SubjectKeyIdentifier (OID.2.5.29.14)
+     Critical: false
+     keyID: 9f88edac98e246f478d7c33ad41b3837bce21e68
+  ]
+  [ 
+     Extension: AuthorityKeyIdentifier (OID.2.5.29.35)
+     Critical: false
+     keyID: 9f88edac98e246f478d7c33ad41b3837bce21e68
+  ]
+  [ 
+     Extension: BasicConstraints (OID.2.5.29.19)
+     Critical: true
+     cA: true
+  ]
+
+  Signature: 
+  0000: 30 66 02 31 00 ff 0e 40 ba 82 6d ab db 9c 98 3f [0f.1...@..m....?]
+..............
+
+]
+***DECRYPT: Ciphertext (102): [ 
+  0000: 10 00 00 62 61 04 36 e2 dc 86 53 17 32 9c 3d fe [...ba.6...S.2.=.]
+...............                              [e...j.          ]
+ ]
+***DECRYPT: Plaintext (102): [ 
+  0000: 10 00 00 62 61 04 36 e2 dc 86 53 17 32 9c 3d fe [...ba.6...S.2.=.]
+............
+ ]
+Record received (102): [ 
+  0000: 10 00 00 62 61 04 36 e2 dc 86 53 17 32 9c 3d fe [...ba.6...S.2.=.]
+...............                            [e...j.          ]
+ ]
+***READ ClientKeyExchange ECDH
+ECDH Public Key: [ 
+  0000: 04 36 e2 dc 86 53 17 32 9c 3d fe 8c 49 3c 08 50 [.6...S.2.=..I<.P]
+................                                            [.               ]
+ ]
+***DECRYPT: Ciphertext (110): [ 
+  0000: 0f 00 00 6a 06 03 00 66 30 64 02 30 3b 84 43 12 [...j...f0d.0;.C.]
+.................
+ ]
+***DECRYPT: Plaintext (110): [ 
+  0000: 0f 00 00 6a 06 03 00 66 30 64 02 30 3b 84 43 12 [...j...f0d.0;.C.]
+....................
+ ]
+Record received (110): [ 
+  0000: 0f 00 00 6a 06 03 00 66 30 64 02 30 3b 84 43 12 [...j...f0d.0;.C.]
+............................
+ ]
+***SEND Alert Fatal, Unexpected Message
+***ENCRYPT: Plaintext (2): [ 
+  0000: 02 0a                                           [..              ]
+ ]
+***ENCRYPT: Ciphertext (2): [ 
+  0000: 02 0a                                           [..              ]
+ ]
+ 
+ ==========
+
